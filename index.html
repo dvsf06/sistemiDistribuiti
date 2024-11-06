@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemi distribuiti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-motherboard-fill"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Argomenti
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#introduzione">Introduzione</a></li>
+                        <li><a class="dropdown-item" href="#">Classificazione</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Modelli architetturali</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <div class="container-md">
+        <h1 class="display-1" style="margin-top: 70px;">I Sistemi Distribuiti</h1>
+        <hr>
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <div class="row align-items-start">
+                <div class="col">
+                    <h1><small class="text-muted" id="introduzione">Introduzione</small></h1>
+                    <p>
+                        Le architetture dei <strong>sistemi informativi</strong> si sono evolute nel tempo, passando da <strong>modelli centralizzati</strong> a <strong>sistemi distribuiti</strong>,
+                        in risposta alle esigenze di decentralizzazione e collaborazione delle moderne organizzazioni.
+                    </p>
+                    <p>
+                        Nei <strong>sistemi centralizzati</strong>, tutte le applicazioni girano su un singolo processore o host, che funge da unico componente
+                        autonomo condiviso tra vari utenti. Sebbene questa configurazione semplifichi la gestione delle risorse, presenta <strong>limiti
+                        significativi</strong> in termini di scalabilità e resilienza: <strong>un guasto centrale può compromettere l'intero sistema</strong>.
+                    </p>
+                    <p>
+                        Al contrario, nei sistemi distribuiti, le applicazioni consistono in <strong>più processi</strong> che cooperano e vengono <strong>eseguiti
+                        in parallelo</strong> su un insieme di unità di elaborazione autonome. Questo modello sfrutta <strong>l'aggregazione di diverse CPU e
+                        risorse</strong>, migliorando la flessibilità, la disponibilità e la tolleranza ai guasti, rendendo i sistemi distribuiti più adatti
+                        alle necessità delle organizzazioni moderne.
+                    </p>
+                    <a href="#args"><button type="button" class="btn btn-secondary btn-sm">Scopri di più</button></a>
+                </div>
+                <div class="col">
+                    <img src="images/sistDistribuiti.jpg" style="border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="display-3" id="args" style="text-align: center;">Argomenti</h1>
+            <div class="row justify-content-around">
+                <div class="col">
+                    <div class="card shadow p-3 mb-5 bg-body rounded border-0">
+                        <img src="images/cardSistDistr.jpg" class="card-img-top" style="height: 15rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Sistemi distribuiti</h5>
+                          <p class="card-text">I sistemi distribuiti collegano componenti autonomi per collaborare e condividere risorse in modo scalabile e resiliente.</p>
+                          <a href="pages/sistemiDistribuiti.html" class="btn btn-secondary">Vai alla pagina</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow p-3 mb-5 bg-body rounded border-0">
+                        <img src="images/sistemi-legacy.jpg" class="card-img-top" style="height: 15rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Classificazione</h5>
+                          <p class="card-text">I sistemi distribuiti si classificano in base a architettura, trasparenza e modalità di comunicazione.</p>
+                          <a href="pages/classificazione.html" class="btn btn-secondary">Vai alla pagina</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow p-3 mb-5 bg-body rounded border-0">
+                        <img src="images/modelliArchitetturali.png" class="card-img-top" style="height: 15rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Modelli architetturali</h5>
+                          <p class="card-text">La classificazione di Flynn divide i sistemi in SISD, SIMD, MISD e MIMD, a seconda dei flussi di istruzioni e dati.</p>
+                          <a href="pages/modelliArchitetturali.html" class="btn btn-secondary">Vai alla pagina</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <footer class="footer mt-5 py-3 bg-dark">
+        <div class="container">
+          <span class="text-muted">Davide Sforza 5A 2024/2025</span>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

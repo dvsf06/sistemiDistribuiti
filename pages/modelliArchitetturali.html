@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelli architetturali</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-motherboard-fill"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Argomenti
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sistemiDistribuiti.html">Introduzione</a></li>
+                        <li><a class="dropdown-item" href="classificazione.html">Classificazione</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="modelliArchitetturali.html">Modelli architetturali</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-md">
+        <div class=" shadow p-3 mb-5 mt-5 bg-body rounded">
+            <h1 class="display-2">Modelli architetturali</h1>
+            <hr>
+            <div class="row align-items-start">
+                <div class="col">
+                    <p>
+                        Le architetture MIMD, SISD, SIMD e MISD rappresentano diversi paradigmi per l'organizzazione e 
+                        l'elaborazione dei dati nei sistemi di elaborazione, in particolare nei sistemi distribuiti e paralleli.
+                    </p>
+                    <p>
+                        L'architettura SISD (Single Instruction Single Data) è il modello più semplice, dove un singolo processore 
+                        esegue un'unica istruzione su un singolo dato alla volta. Questo modello è tipico dei computer tradizionali e 
+                        presenta una linearità nell'esecuzione, limitando le prestazioni in scenari di carico di lavoro elevato o complesso, 
+                        poiché non sfrutta la parallelizzazione.
+                    </p>
+                    <p>
+                        L'architettura SIMD (Single Instruction Multiple Data) consente a un'unica istruzione di essere applicata a più dati simultaneamente. 
+                        Questo modello è particolarmente efficace per operazioni su grandi volumi di dati, come nel caso di calcoli vettoriali o di 
+                        immagini, dove la stessa operazione deve essere eseguita su diversi elementi. La parallelizzazione delle operazioni permette 
+                        di ottenere prestazioni elevate, rendendo SIMD ideale per applicazioni di elaborazione numerica.                    
+                </div>
+                <div class="col">
+                    <img src="../images/modelliArchitetturali.png" style="width: 50rem; border-radius: 5px;">
+                </div>
+            </div>
+            <p>
+                L'architettura MISD (Multiple Instruction Single Data) è meno comune e consiste nell'eseguire diverse istruzioni su un singolo dato. 
+                Questo modello potrebbe sembrare controintuitivo, ma è utile in applicazioni specializzate, come nei sistemi di fault tolerance, 
+                dove più istruzioni possono essere utilizzate per verificare e correggere dati in tempo reale, garantendo maggiore affidabilità.
+            </p>
+            <p>
+                Infine, l'architettura MIMD (Multiple Instruction Multiple Data) è la più flessibile e potente. In un sistema MIMD, 
+                più processori possono eseguire istruzioni diverse su dati diversi simultaneamente. Questo approccio è particolarmente vantaggioso 
+                per applicazioni complesse e variabili, dove i compiti possono essere distribuiti tra i nodi, permettendo di affrontare problemi 
+                diversi in parallelo. La versatilità di MIMD lo rende adatto a una vasta gamma di applicazioni, dai server web ai sistemi di calcolo 
+                ad alte prestazioni.
+            </p>
+            <p>
+                L'architettura MIMD (Multiple Instruction Multiple Data) si presenta in due configurazioni principali: multicomputer e multiprocessore.
+            </p>
+            <p>
+                L'architettura multicomputer è composta da più computer autonomi, ognuno con il proprio processore e memoria, che comunicano attraverso una rete. 
+                Questa configurazione offre grande flessibilità e scalabilità, ed è spesso utilizzata in applicazioni distribuite e di calcolo ad alte prestazioni. 
+                Tuttavia, la gestione della comunicazione tra nodi può essere complessa.
+            </p>
+            <p>
+                L'architettura multiprocessore consiste in un singolo sistema fisico con più processori che condividono memoria e risorse. 
+                I processori possono eseguire istruzioni diverse su dati diversi simultaneamente, rendendo questa configurazione ideale per applicazioni 
+                che richiedono alta velocità e bassa latenza nella comunicazione.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-dark">
+        <div class="container">
+          <span class="text-muted">Davide Sforza 5A 2024/2025</span>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

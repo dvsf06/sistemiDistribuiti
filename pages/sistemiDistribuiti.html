@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduzione</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-motherboard-fill"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Argomenti
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sistemiDistribuiti.html">Introduzione</a></li>
+                        <li><a class="dropdown-item" href="classificazione.html">Classificazione</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="modelliArchitetturali.html">Modelli architetturali</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-md">
+        <div class=" shadow p-3 mb-5 mt-5 bg-body rounded">
+            <h1 class="display-2">Definizioni</h1>
+            <hr>
+            <div class="row align-items-start">
+                <div class="col">
+                    <p>Un sistema informatico è considerato distribuito se soddisfa almeno una delle seguenti condizioni: le applicazioni sono ospitate su più host che collaborano tra loro, oppure il patrimonio informativo è conservato su più host.</p>
+                    <blockquote class="blockquote">
+                        <p>Un sistema distribuito è una collezione di computer indipendenti che appare all’utente come un solo sistema coerente.</p>
+                    </blockquote>
+                    <p>            
+                        Un sistema distribuito è costituito da un insieme di applicazioni logicamente indipendenti che collaborano per 
+                        raggiungere obiettivi comuni, utilizzando un'infrastruttura di comunicazione che comprende sia componenti hardware che 
+                        software. Ogni componente del sistema esegue un programma, che può variare non solo in base al compito specifico che 
+                        svolge, ma anche per il ruolo di elaborazione che assume all'interno della rete. Le applicazioni nel sistema sono 
+                        classificate in base ai loro ruoli operativi: un'applicazione è definita "client" quando funge da utilizzatore dei 
+                        servizi forniti da altre applicazioni, mentre è identificata come "server" quando offre servizi ad altre applicazioni. 
+                        Inoltre, esiste la categoria "actor", che si riferisce a un'applicazione che, a seconda delle situazioni, può svolgere sia 
+                        il ruolo di cliente che quello di servente, adattandosi dinamicamente alle esigenze del sistema. Questa flessibilità consente 
+                        una maggiore interazione e cooperazione tra le diverse parti del sistema distribuito, rendendolo più efficace e resiliente.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="../images/Sistema-informatico-distribuito.jpg" style="width: 50rem; border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-5 py-3 bg-dark">
+        <div class="container">
+          <span class="text-muted">Davide Sforza 5A 2024/2025</span>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
